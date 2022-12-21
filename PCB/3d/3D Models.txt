@@ -1,0 +1,3 @@
+EC 11 https://grabcad.com/library/ec11-rotary-encoder-dode-switch-15mm-1
+Kailh hotswap https://grabcad.com/library/kailh-hotswap-mx-1
+Sk6812Mini https://grabcad.com/library/sk6812mini-e-led-1

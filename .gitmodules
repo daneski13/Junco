@@ -1,0 +1,6 @@
+[submodule "PCB/marbastlib"]
+	path = PCB/marbastlib
+	url = https://github.com/ebastler/marbastlib.git
+[submodule "PCB/KiCad-RP-Pico"]
+	path = PCB/KiCad-RP-Pico
+	url = https://github.com/ncarandini/KiCad-RP-Pico.git
