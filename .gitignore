@@ -1,8 +1,9 @@
-
-.DS_Store
+**/.DS_Store
 PCB/fp-info-cache
 PCB/Junco-backups
 PCB/Junco.bak
 PCB/Junco.kicad_sch-bak
 PCB/3d/*.STEP
 PCB/Junco.kicad_prl
+**/*.blend1
+PCB/_autosave-Junco.kicad_pcb
