@@ -3,7 +3,7 @@
 This project incorporates and modifies material from third parties.
 
 - Pico Footprint
-- MX Hotswap + Rotary Encoder Footprint
+- MX Hot-swap + Rotary Encoder Footprint
 
 ## Pico Footpint
 
