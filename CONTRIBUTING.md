@@ -1,17 +1,18 @@
 # Contributing
 
-**Always looking for the following contributions:**
+**Always accepting...**
 
-- Improving the case files and/or adding new cases see [quirks](./README.md#quirks) and [case](./README.md#case)
-- Markdown files - fixing typos and grammar or adding clarity
+- Improving the case files and/or adding new cases see, [quirks](./README.md#quirks) and [case](./README.md#case)
+- Markdown files - fixing typos / grammar or improving clarity, documentation, etc.
 
 **Wish list:**
 
-- Fixing the switch sockets / RGB to be right side up see [quirks](./README.md#quirks) (for a revision 1.1)
-- 50% Variant (no num-row)
-- Portable companion keyboard. Highly portable, no rotary, 50% Choc hot-swap variant (bluetooth, ZMK)
+- **Revision 2.0**
+  - Fixing the switch sockets / LED Holes to be right side up see [quirks](./README.md#quirks)
+  - Hardware-level handedness with an [unused pin](https://docs.qmk.fm/#/feature_split_keyboard?id=handedness-by-pin)
+  - Use holes instead of edge cuts for the LEDs to avoid the potential increased cost of the PCB
 
-Other types of contributions that align with goals similar to those expressed in [design philosophy](./README.md#philosophy) are welcome, but please open an issue first to discuss.
+If you have another idea, feel free to open an issue for discussion!
 
 ## Getting Started
 
@@ -21,12 +22,10 @@ Clone this repository with submodules:
 git clone --recurse-submodules https://github.com/Daneski13/Junco.git
 ```
 
-Make sure you have the latest version of [KiCad](https://kicad.org/download/) installed if you want to make changes to the PCB. If you just want to make changes to the case files, you may use the software of your choice, but a free option would be preferred.
+Make sure you have the latest version of [KiCad](https://kicad.org/download/) installed if you want to make changes to the PCB. If you just want to make changes to the case files you may use any software of your choice (a free option is preferred), just provide the raw files in your PR.
 
 ## Making Changes
 
 Make your changes in a new branch unless you are fixing markdown files. If you are only changing markdown files, you may make your changes on the `main` branch.
 
-Update the README / documentation with the details of your changes as necessary.
-
-Larger changes should have a PR open during development to allow for discussion and feedback.
+Update the README / documentation the details of your changes as necessary.
