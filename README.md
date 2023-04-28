@@ -85,7 +85,7 @@ Being my first venture into keyboard design... Junco unfortunately suffers from 
   - The TRRS jack is also soldered on the backside, causing another uneven surface for the switch plate.
   - Thus, material must be removed from the back of the switch plate in the proper places for a flush fit.
     - Heat-gunning the switch plate in the proper area, lining it up with the PCB, and squishing provides a quick and *dirty* solution if done correctly.
-  - **PRs are welcome to improve upon the case files or to create new cases as I am a 3D design novice.**
+  - **PRs are welcome to improve upon the case files or to create new cases as I am a 3D design novice.** A proper fix would be to have the PCB rest on the middle section's lip about 1.5mm below the switch plate. This would also allow plate mounted switches to properly latch onto the switch plate.
 
 ## Build Guide / Assembly
 
@@ -159,7 +159,7 @@ If you are soldering the Pico using headers, first solder the Pico to the header
 
 **Ensure that you are soldering the Pico/Header onto the backside of the PCB.**
 
-The best way to go about this method is to rest the shorter end of the headers in the through-holes of the PCB on a flat surface and place the Pico on top, through the longer end of the header. This will stabilize the headers somewhat and ensure proper spacing. Solder the Pico to the 2 header pins on the both the "front" and "back" of the Pico to hold it in place. Proceed to solder the Pico to the rest of the header's pins.
+The best way to go about this method is to rest the shorter end of the headers in the through-holes of the PCB on a flat surface and place the Pico on top, through the longer end of the header. This will stabilize the headers somewhat and ensure proper spacing. Solder the Pico to the 2 header pins on the both the "top" and "bottom" of the Pico to hold it in place. Proceed to solder the Pico to the rest of the header's pins.
 
 After the Pico is soldered to the header, flip the PCB over and solder the sticking-out header pins to the PCB. Start with the 2 "top" and 2 "bottom" header pins to hold it in place, being sure to minimize the space between the header's plastic and the PCB. Proceed to solder the PCB to the rest of the header's pins.
 
