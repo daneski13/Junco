@@ -2,7 +2,7 @@
   (layer "F.Cu")
   (descr "EC11 Rotary Encoder with Common AliExpress Tolerances")
   (tags "EC11 rotary encoder")
-  (attr smd)
+  (attr through_hole)
   (fp_text reference "REF**" (at 0.2 -1.2 unlocked) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 757f9e6b-06d5-421a-b65a-f34f15b31257)
