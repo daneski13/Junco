@@ -23,12 +23,9 @@
     (stroke (width 0.12) (type solid)) (fill none) (layer "Edge.Cuts") (tstamp 7030a9f2-236e-42e3-8872-5513f1d7f36b))
   (fp_rect (start 1.6 -1.4) (end -1.6 1.4)
     (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab") (tstamp 5aeca089-fd67-4c49-8972-f7e52c09bb3d))
-  (pad "1" thru_hole circle (at -3.1 -0.762) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (tstamp a37cae3f-52d5-4791-9f96-e91bafeec5da))
   (pad "1" smd rect (at -2.7 -0.75) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 92eb71ce-7192-4659-a6ec-62fa86bce569))
   (pad "2" smd rect (at -2.7 0.75) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 9129b2bf-110f-4097-abda-7cd18e927faf))
-  (pad "2" thru_hole circle (at -2.3 0.75) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (tstamp 28bc5aed-6a65-42f8-8fcc-aee9da8be108))
   (pad "3" smd roundrect (at 2.7 0.76) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp d7fc598d-10ba-49c9-ad52-e3a869a136fb))
-  (pad "4" thru_hole circle (at 2.3 -0.75) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (tstamp 4834398b-7842-48f5-a9d9-5b4d479f7093))
   (pad "4" smd rect (at 2.7 -0.74) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 02ded7a0-0586-476a-a703-bcf2c39c84ac))
   (model "${KIPRJMOD}/3d/LED_SK6812MINI-E.step"
     (offset (xyz 0 5.08 -3.6))
