@@ -1,6 +1,6 @@
 (footprint "Level Shifter Bypass Jumper" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
-  (attr through_hole)
+  (attr through_hole exclude_from_pos_files exclude_from_bom)
   (fp_text reference "REF**" (at 0 -1.73 unlocked) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp a4007f92-f4df-4b45-8e92-13a9d30a1b2d)

@@ -7,7 +7,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 2b813ff0-fb32-46be-90fa-281d9c2fb297)
   )
-  (fp_text value "SK68XXMini" (at -0.01 2.52 unlocked) (layer "B.Fab")
+  (fp_text value "SK6803MINI-E" (at -0.01 2.52 unlocked) (layer "B.Fab")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     (tstamp c9f66fb5-4d4c-4b21-8195-3d5319e733e1)
   )
