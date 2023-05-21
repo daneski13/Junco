@@ -11,22 +11,36 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     (tstamp c9f66fb5-4d4c-4b21-8195-3d5319e733e1)
   )
-  (fp_line (start 2.05 1.35) (end 2.05 1.85)
-    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 7ae8db6a-388b-4ee7-80e6-1c3d074273d7))
-  (fp_line (start 2.05 1.85) (end 1.55 1.85)
-    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 879d6400-4aac-4736-a15c-53303c1947f1))
-  (fp_line (start 3.65 0.92) (end 3.65 1.42)
-    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 05daa2d3-a43b-413c-b8f0-78b6d0304fa1))
-  (fp_line (start 3.65 1.42) (end 3.15 1.42)
-    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp a63b08e7-4e33-457e-8513-17edb8e8bec3))
-  (fp_rect (start 1.8 -1.6) (end -1.8 1.6)
-    (stroke (width 0.12) (type solid)) (fill none) (layer "Edge.Cuts") (tstamp 7030a9f2-236e-42e3-8872-5513f1d7f36b))
-  (fp_rect (start 1.6 -1.4) (end -1.6 1.4)
-    (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab") (tstamp 5aeca089-fd67-4c49-8972-f7e52c09bb3d))
-  (pad "1" smd rect (at -2.7 -0.75) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 92eb71ce-7192-4659-a6ec-62fa86bce569))
-  (pad "2" smd rect (at -2.7 0.75) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 9129b2bf-110f-4097-abda-7cd18e927faf))
-  (pad "3" smd roundrect (at 2.7 0.76) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp d7fc598d-10ba-49c9-ad52-e3a869a136fb))
-  (pad "4" smd rect (at 2.7 -0.74) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 02ded7a0-0586-476a-a703-bcf2c39c84ac))
+  (fp_line (start 2.05 -1.85) (end 1.55 -1.85)
+    (stroke (width 0.12) (type solid)) (layer "B.SilkS") (tstamp d20b9dd3-6e37-435d-8dfd-0d08dc10356b))
+  (fp_line (start 2.05 -1.35) (end 2.05 -1.85)
+    (stroke (width 0.12) (type solid)) (layer "B.SilkS") (tstamp 63ed2bc8-eda3-45fc-ba96-55fc324caba2))
+  (fp_line (start 3.15 -1.41) (end 3.65 -1.41)
+    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 5068e92c-9aab-41e0-bc7d-8696d16930ca))
+  (fp_line (start 3.65 -1.41) (end 3.65 -0.91)
+    (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp f791a39a-1bae-42bd-b539-70fe5cee8ba2))
+  (fp_rect (start -1.8 1.6) (end 1.8 -1.6)
+    (stroke (width 0.12) (type solid)) (fill none) (layer "Edge.Cuts") (tstamp 21739f18-ccf6-4d56-af1b-947ba9f27070))
+  (fp_rect (start -1.6 1.4) (end 1.6 -1.4)
+    (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab") (tstamp cac7001f-53b0-4239-8359-06a521f8a9a2))
+  (pad "1" smd rect (at -2.7 0.74 180) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 671ac263-f293-4e7f-ba6d-10f6ac7978ef))
+  (pad "2" smd rect (at -2.7 -0.76 180) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 339d2425-22af-48be-b10e-0b6b0a5d6b31))
+  (pad "3" smd roundrect (at 2.7 -0.75 180) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp a88c7ad0-8887-47e7-9b0e-e0e3c54cdb80))
+  (pad "4" smd rect (at 2.7 0.75 180) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4b8882b5-2221-4ca3-8951-854037d5085e))
+  (group "" (id 4983ba08-683c-42ec-9e01-88cb25961041)
+    (members
+      21739f18-ccf6-4d56-af1b-947ba9f27070
+      339d2425-22af-48be-b10e-0b6b0a5d6b31
+      4b8882b5-2221-4ca3-8951-854037d5085e
+      5068e92c-9aab-41e0-bc7d-8696d16930ca
+      63ed2bc8-eda3-45fc-ba96-55fc324caba2
+      671ac263-f293-4e7f-ba6d-10f6ac7978ef
+      a88c7ad0-8887-47e7-9b0e-e0e3c54cdb80
+      cac7001f-53b0-4239-8359-06a521f8a9a2
+      d20b9dd3-6e37-435d-8dfd-0d08dc10356b
+      f791a39a-1bae-42bd-b539-70fe5cee8ba2
+    )
+  )
   (model "${KIPRJMOD}/3d/LED_SK6812MINI-E.step"
     (offset (xyz 0 5.08 -3.6))
     (scale (xyz 1 1 1))
