@@ -141,7 +141,7 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "SW16","SW_Push","SW_MX_HS_1u",70.482764,79.261376,0.000000,bottom
 "SW17","SW_Push","SW_MX_HS_1u",89.532764,73.761376,0.000000,bottom
 "SW18","SW_Push","SW_MX_HS_1u",108.582764,71.261376,0.000000,bottom
-"SW19","SW_MX_Hotswap_Rotary_Switch_Rotated","SW_MX_Hotswap_Rotary_Switch_Rotated",13.335000,42.720000,180.000000,bottom
+"SW19","SW_MX_Hotswap_Rotary_Switch_Rotated","SW_MX_Hotswap_Rotary_Switch_Rotated",13.335000,42.720000,0.000000,bottom
 "SW20","SW_Push","SW_MX_HS_1u",32.382764,42.711376,0.000000,bottom
 "SW21","SW_Push","SW_MX_HS_1u",51.432764,54.711376,0.000000,bottom
 "SW22","SW_Push","SW_MX_HS_1u",70.482764,60.211376,0.000000,bottom
@@ -170,7 +170,7 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "SW46","SW_Push","SW_MX_HS_1u",226.125564,79.261376,0.000000,bottom
 "SW47","SW_Push","SW_MX_HS_1u",207.075564,73.761376,0.000000,bottom
 "SW48","SW_Push","SW_MX_HS_1u",188.025564,71.261376,0.000000,bottom
-"SW49","SW_MX_Hotswap_Rotary_Switch_Rotated","SW_MX_Hotswap_Rotary_Switch_Rotated",283.272200,42.720000,180.000000,bottom
+"SW49","SW_MX_Hotswap_Rotary_Switch_Rotated","SW_MX_Hotswap_Rotary_Switch_Rotated",283.272200,42.720000,0.000000,bottom
 "SW50","SW_Push","SW_MX_HS_1u",264.225564,42.711376,0.000000,bottom
 "SW51","SW_Push","SW_MX_HS_1u",245.175564,54.711376,0.000000,bottom
 "SW52","SW_Push","SW_MX_HS_1u",226.125564,60.211376,0.000000,bottom
