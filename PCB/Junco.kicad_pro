@@ -424,7 +424,8 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "Junco"
+      "Junco",
+      "marbast_mx"
     ],
     "pinned_symbol_libs": []
   },
