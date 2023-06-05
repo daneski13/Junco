@@ -1,0 +1,24 @@
+(footprint "HOLE_M2_Post_throughhole_from_sofle" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "TH4" (at 0 -2.54) (layer "F.SilkS") hide
+      (effects (font (size 0.29972 0.29972) (thickness 0.0762)))
+    (tstamp 9bb2ee3c-e810-4901-a3ca-1e9c7f89d1aa)
+  )
+  (fp_text value "HOLE" (at 0 2.54) (layer "F.SilkS") hide
+      (effects (font (size 0.29972 0.29972) (thickness 0.0762)))
+    (tstamp 2547101a-5d15-42ac-8c96-53309015abef)
+  )
+  (fp_line (start -0.25 0) (end 0.25 0)
+    (stroke (width 0.12) (type default)) (layer "Dwgs.User") (tstamp 10e7525e-cbaf-4c5d-b27d-4e621ff038a1))
+  (fp_line (start 0 0.25) (end 0 -0.25)
+    (stroke (width 0.12) (type default)) (layer "Dwgs.User") (tstamp 1877ef76-fbee-4b90-855f-42bb5df1a681))
+  (pad "" thru_hole circle (at 0 0 90) (size 4.7 4.7) (drill 4.1) (layers "*.Cu" "*.Mask" "Dwgs.User")
+    (clearance 0.3) (tstamp 96464867-7ece-434c-a77b-433009d282a6))
+  (group "" (id 1072c709-67de-4208-93b1-0e57c38a310e)
+    (members
+      10e7525e-cbaf-4c5d-b27d-4e621ff038a1
+      1877ef76-fbee-4b90-855f-42bb5df1a681
+    )
+  )
+)
