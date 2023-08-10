@@ -91,7 +91,7 @@
       d9538c06-f0cc-4b73-8f84-9b7988a49df4
     )
   )
-  (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
+  (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
     (offset (xyz 0 -3 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

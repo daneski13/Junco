@@ -36,9 +36,9 @@
   (pad "2" smd rect (at 2.68 0.76) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0d0aec36-fa2f-47f1-8a6e-1b8dbd0726e5))
   (pad "3" smd roundrect (at -2.72 0.75) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp cf5e678c-c9bd-4fc5-bc72-2e0a5cf09fa6))
   (pad "4" smd rect (at -2.72 -0.75) (size 1.4 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8ec5a01e-d3f3-412e-9d6b-8059441c4367))
-  (model "${KIPRJMOD}/3d/LED_SK6812MINI-E.step"
-    (offset (xyz 0 5.08 -3.6))
+  (model "/Users/ryanrayneff/Documents/Junco/marbastlib/3dmodels/LED_SK6812MINI-E.step"
+    (offset (xyz 0 5 -1.75))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 180 0))
+    (rotate (xyz 180 0 180))
   )
 )

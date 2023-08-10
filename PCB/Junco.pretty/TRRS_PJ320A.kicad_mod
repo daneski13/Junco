@@ -41,8 +41,13 @@
   (pad "R2" thru_hole oval (at 2.3 -1.85) (size 1.6 2) (drill oval 0.9 1.3) (layers "*.Cu" "*.Mask") (tstamp 0a37f18a-daf0-4d29-8411-5a32c7828699))
   (pad "S" thru_hole oval (at -2.3 6.25) (size 1.6 2) (drill oval 0.9 1.3) (layers "*.Cu" "*.Mask") (tstamp 1b705267-d925-44bf-bb08-818409bb2535))
   (pad "T" thru_hole oval (at 2.3 5.15) (size 1.6 2) (drill oval 0.9 1.3) (layers "*.Cu" "*.Mask") (tstamp 077cef1a-c43b-4c10-a208-8541af9eb4a1))
-  (model "${KIPRJMOD}/3d/PJ320A.STEP"
+  (model "${KIPRJMOD}/3d/PJ320A.STEP" hide
     (offset (xyz -0.25 0 -12.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
+  (model "/Users/ryanrayneff/Documents/Junco/marbastlib/3dmodels/CON_MJ-4PP-9.step"
+    (offset (xyz 0.25 -1 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))
   )

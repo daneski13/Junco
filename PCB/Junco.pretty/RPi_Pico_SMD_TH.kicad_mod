@@ -255,6 +255,8 @@
     (stroke (width 0.12) (type solid)) (layer "F.Fab") (tstamp 94d24676-7ae3-483c-8bd6-88d31adf00b4))
   (fp_rect (start -11.43 -26.67) (end 11.43 26.67)
     (stroke (width 0.12) (type solid)) (fill none) (layer "F.Fab") (tstamp 6249fde6-7abb-4863-98c5-e828009e9ff6))
+  (fp_rect (start -7.5 -20) (end 7.5 22.5)
+    (stroke (width 0.12) (type default)) (fill none) (layer "User.8") (tstamp fa222787-9e99-4e2b-bc98-2aac63fc2817))
   (pad "1" thru_hole oval (at -8.89 -24.13) (size 1.7 1.7) (drill 1.02) (layers "*.Cu" "*.Mask") (tstamp 015f5586-ba76-4a98-9114-f5cd2c67134d))
   (pad "1" smd rect (at -8.89 -24.13) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask") (tstamp 761c8e29-382a-475c-a37a-7201cc9cd0f5))
   (pad "2" thru_hole oval (at -8.89 -21.59) (size 1.7 1.7) (drill 1.02) (layers "*.Cu" "*.Mask") (tstamp 541721d1-074b-496e-a833-813044b3e8ca))
@@ -341,7 +343,7 @@
   (pad "42" smd rect (at 0 23.9 90) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask") (tstamp 751d823e-1d7b-4501-9658-d06d459b0e16))
   (pad "43" thru_hole oval (at 2.54 23.9) (size 1.7 1.7) (drill 1.02) (layers "*.Cu" "*.Mask") (tstamp 92761c09-a591-4c8e-af4d-e0e2262cb01d))
   (pad "43" smd rect (at 2.54 23.9 90) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask") (tstamp aadc3df5-0e2d-4f3d-b72e-6f184da74c89))
-  (model "${KIPRJMOD}/KiCad-RP-Pico/RP-Pico Libraries/Pico.wrl"
+  (model "/Users/ryanrayneff/Documents/Junco/KiCad-RP-Pico/RP-Pico Libraries/Pico.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

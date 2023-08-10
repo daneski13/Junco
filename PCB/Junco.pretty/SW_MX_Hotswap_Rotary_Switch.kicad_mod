@@ -65,6 +65,10 @@
     (stroke (width 0.12) (type solid)) (layer "F.Fab") (tstamp 73ce422b-aa64-4648-a7b0-b7de0b89ab37))
   (fp_arc (start 4 -6.8) (mid 5.414214 -6.214214) (end 6 -4.8)
     (stroke (width 0.12) (type solid)) (layer "F.Fab") (tstamp d62b6fac-70b9-45b3-8553-7cd956adbd9e))
+  (fp_rect (start -7 -7) (end 7 7)
+    (stroke (width 0.1) (type default)) (fill none) (layer "User.8") (tstamp 9ed20846-a68a-416f-91ec-a98e787494de))
+  (fp_rect (start -6.5 7.5) (end 6.5 -9)
+    (stroke (width 0.12) (type default)) (fill none) (layer "User.8") (tstamp 49898ff7-add5-416b-ae27-0edff4e69fba))
   (pad "" np_thru_hole oval (at -5.6 -0.6 90) (size 2.8 1.5) (drill oval 2.8 1.5) (layers "F&B.Cu" "*.Mask") (tstamp 0c28a4af-2ede-4d24-a7b9-d1224843f6f3))
   (pad "" np_thru_hole circle (at -5.08 0) (size 1.75 1.75) (drill 1.75) (layers "*.Cu" "*.Mask") (tstamp dfb3fa76-00a4-43bc-a4c1-2b2ae60509c9))
   (pad "" np_thru_hole circle (at -2.54 -5.08) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask") (tstamp 5d39d904-f690-4369-b44c-6c8a5d4fc849))
@@ -102,14 +106,9 @@
       ff9093cf-c7ba-400a-8bb2-101a1a6471aa
     )
   )
-  (model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_MX.wrl" hide
-    (offset (xyz 0 0 0))
+  (model "/Users/ryanrayneff/Documents/Junco/marbastlib/3dmodels/ROT_EC11E.step"
+    (offset (xyz -2.5 8 -1.5))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
-  (model "${KIPRJMOD}/3d/EC11 Rotary Encoder Dode Switch-15mm .STEP" hide
-    (offset (xyz 0 -0.6 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz 180 0 90))
   )
 )

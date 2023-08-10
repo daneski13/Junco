@@ -490,7 +490,7 @@
       "idf": "",
       "netlist": "Junco.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../case_acrylic/Junco.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
