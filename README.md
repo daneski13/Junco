@@ -128,10 +128,8 @@ Through-hole diodes are inserted on the back of the board, and soldered on the f
 
 **Note** that the diodes have polarity, ensure the line on the diode matches the silkscreen.
 
-# @todo Get a phot of Through-hole diodes
-
 ![Soldered Diodes](./img/diodes.webp)
-
+![Soldered Diodes](./img/junco_through-hole_diodes.png)
 #### RGB (Optional)
 
 All LEDs must be soldered to the PCB for RGB to work properly, even if you will not be using backlight or will be using an encoder that covers an LED. (They are wired in serial).
@@ -140,16 +138,17 @@ First solder the level shifter. It's tiny & squirrley - [drag soldering](https:/
 
 ![Level Shifter Soldered](./img/level_shifter.webp)
 
-All LEDs will be soldered facing _down from you_. The LEDS for per-key RGB will be soldered on the back of the board, while the LED's for the underglow will be soldered on the front of the board.
+All LEDs will be soldered facing _down into the board_. The LEDS for per-key RGB will be soldered on the back of the board, while the LED's for the underglow will be soldered on the front of the board.
 
-**Note** the LED orientation is very important. One of the pads on each LED will be misshapen relative to the others, this pad should connect to the PCB pad that is marked by the L shape on the silkscreen. For a sanity check, a corner of the LED's front-side will also be "cut", this corner must also line up with the L shape on the silkscreen.
+**Note** the LED orientation is very important. One of the pads on each LED (the ground pin) will be misshapen relative to the others, this pad should connect to the PCB pad that is marked by the L shape on the silkscreen. For a sanity check, a corner of the LED's front-side will also be "cut", this corner must also line up with the L shape on the silkscreen.
 
-# @todo REWRITE this and add update pictures
-Blue is LEDs that will face away from you, towards the front-side of the PCB for the per-key lighting. Red will face "up" at you for the underglow:
+All LEDs are installed face down, toward the board. Blue is LEDs that will be installed on the underside of the board, facing the front-side of the PCB for the per-key lighting. Red will be installed on the front of the board for the underglow:
 
 ![LED Orientation](./img/LED_orientation.svg)
+![LEDs Soldered](./img/front_back_leds.png)
+Ground pin orientation:
 
-![LEDs Soldered](./img/LED.webp)
+![LEDs Soldered](./img/led_groundpin.png)
 
 After you finish the next step of soldering the Pico to the PCB, recommend plugging the keyboard in and flashing QMK to ensure the LEDs are lighting up. If there are any issues, check the troubleshooting section.
 
@@ -173,7 +172,7 @@ Backside of PCB:
 
 Front-side of PCB:
 
-![Pico Soldered, PCB Frontside](./img/pico_frontside.webp)
+![Pico Soldered, PCB Frontside](./img/pico_frontside_truncated.png)
 
 #### Hot-swap Sockets
 
