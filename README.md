@@ -142,10 +142,13 @@ All LEDs will be soldered facing _down into the board_. The LEDS for per-key RGB
 
 **Note** the LED orientation is very important. One of the pads on each LED (the ground pin) will be misshapen relative to the others, this pad should connect to the PCB pad that is marked by the L shape on the silkscreen. For a sanity check, a corner of the LED's front-side will also be "cut", this corner must also line up with the L shape on the silkscreen.
 
-All LEDs are installed face down, toward the board. Blue is LEDs that will be installed on the underside of the board, facing the front-side of the PCB for the per-key lighting. Red will be installed on the front of the board for the underglow:
+ Blue is LEDs that will be installed on the underside of the board, facing the front-side of the PCB for the per-key lighting. Red will be installed on the front of the board for the underglow:
 
 ![LED Orientation](./img/LED_orientation.svg)
+
+Per Key leds soldered on the backside, while underglow LEDs ssoldered on the opposite side:
 ![LEDs Soldered](./img/front_back_leds.png)
+
 Ground pin orientation:
 
 ![LEDs Soldered](./img/led_groundpin.png)
