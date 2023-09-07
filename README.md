@@ -77,9 +77,6 @@ The Junco was designed around a set of goals, similar in vain to the Ferris.
 
 Being my first venture into keyboard design... Junco unfortunately suffers from a few "quirks" at the moment that may or may not bother you:
 
-- The switches, and by extension RGB LEDs are "upside down" which was a mistake in the PCB design.
-  - Typically the LED is directly under the legend of the keycap, on the upper-half of the switch. On the Junco, the LEDs are on the lower-half of the switch. For those using keycaps with transparent legends this will result in less vibrant legends.
-  - May be fixed in a future revision.
 - The case files currently provided in this repo assume PCB mounted switches and uses a 3mm switch plate that is flush with the PCB. This presents some problems that a more proper suspended switch plate would not have:
   - Mounting the Pico on the backside with headers causes a bit of the header to be exposed on the front side of the PCB, so the switch plate provided in this repo will not sit flush with the PCB.
   - The TRRS jack is also soldered on the backside, causing another uneven surface for the switch plate.
@@ -99,7 +96,7 @@ Where "56-58" is the count, 58 is needed with 2 rotary encoders. subtract from 5
 | ------------------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | PCB                                  | 2 (1 left and 1 right)  | PCBs can be ordered from manufacturers such as JLCPCB and LCSC                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                             |
 | MX Hot-swap Sockets                  | 56-58                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                             |
-| SMD Diodes                           | 62                      | SOD-123 1N4148                                                                                                                                                                                                                                                                                                                                                                                                                                              | [AliExpress](https://www.aliexpress.us/item/2251832663565152.html)          |
+| Diodes                           | 62                      |Surface mount SOD-123 1N4148, _or_ through-hole 1N4148 diode. These are both common and inexpensive, any one should do. Through hole is usually easier to solder.                                                                                                                                                                                                                                                                                                                                                                                                                                              | SMD: [AliExpress](https://www.aliexpress.us/item/2251832663565152.html) <br>[JLCPCB Part#: C2972760](https://jlcpcb.com/partdetail/3368026-1N4148SOD123/C2972760)<br> Through-hole: [AliExpress](https://www.aliexpress.us/item/2251832473773777.html)           |
 | Raspberry Pi Picos                   | 2                       | PCB is specifically designed with the official Pico and YD-2040 type clone in mind, however several [other clone types](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo) should be compatible (Waveshare, WeAct, EstarDyn, Tenstar). Also, the case is currently designed assuming the Pico is soldered with [headers](https://www.sparkfun.com/products/17907), but surface mounting the Pico is supported on the PCB. | [AliExpress, YD-2040](https://www.aliexpress.us/item/3256803909832318.html) |
 | TRRS Jacks                           | 2                       | PJ-320A                                                                                                                                                                                                                                                                                                                                                                                                                                                     | [AliExpress](https://www.aliexpress.us/item/2255800474897706.html)          |
 | TRRS Cable (3.5mm "Headphone" Cable) | 1                       | TRRS (4 pole) is currently required, not TRS (3 pole)                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                             |
@@ -116,38 +113,45 @@ These parts are necessary for the RGB lighting.
 
 | Name                                          | Count | Remarks                                                                                                                                                                            | Potential Storefront                                               |
 | --------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2     | SOT23-5 Footprint <br/> <br/> Required for LEDs to work properly, Pico runs at 3.3V while the LEDs will require 5V                                                                 | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) |
-| RGB SMD LEDs (Prefer SK6803MINI-E)            | 74    | The 3MA SK6803MINI-E is highly recommended over the more traditional 12MA SK6812MINI-E due to its smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) |
+| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2     | SOT23-5 Footprint <br/> <br/> Required for LEDs to work properly, Pico runs at 3.3V while the LEDs will require 5V                                                                 | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) <br> [JLCPCB Part# C7484](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
+| RGB SMD LEDs (Prefer SK6803MINI-E)            | 74    | The 3MA SK6803MINI-E is highly recommended over the more traditional 12MA SK6812MINI-E due to its smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) <br> [JLCPCB Part# C5184589](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
 
 ### Soldering
 
-The PCB is not reversible, there is a dedicated right and left half in the KiCad PCB files. Almost all of the soldering will occur on the backside of the PCB.
+The PCB is not reversible, there is a dedicated right and left half in the KiCad PCB files. Almost all of the soldering will occur on the backside of the PCB. 
 
 #### Diodes
 
 Solder the diodes as you see in the photo.
+SMD diodes are soldered on the back of the board. 
+Through-hole diodes are inserted on the back of the board, and soldered on the front.
 
 **Note** that the diodes have polarity, ensure the line on the diode matches the silkscreen.
 
 ![Soldered Diodes](./img/diodes.webp)
-
+![Soldered Diodes](./img/junco_through-hole_diodes.png)
 #### RGB (Optional)
 
-All LEDs must be soldered to the PCB for RGB to work properly, even if you will not be using backlight or will be using an encoder that covers an LED.
+All LEDs must be soldered to the PCB for RGB to work properly, even if you will not be using backlight or will be using an encoder that covers an LED. (They are wired in serial).
 
-First solder the level shifter. See photo:
+First solder the level shifter. It's tiny & squirrley - [drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" is a good method. See photo:
 
 ![Level Shifter Soldered](./img/level_shifter.webp)
 
-Most LEDs will be soldered facing down from you for the per-key backlight, several will be soldered facing up for the keyboard's underglow. Those facing up will have 2 L shaped markings on the silkscreen.
+All LEDs will be soldered facing _down into the board_. The LEDS for per-key RGB will be soldered on the back of the board, while the LED's for the underglow will be soldered on the front of the board.
 
-**Note** the LED orientation is very important. One of the pads on each LED will be misshapen relative to the others, this pad should connect to the PCB pad that is marked by the L shape on the silkscreen. For a sanity check, a corner of the LED's front-side will also be "cut", this corner must also line up with the L shape on the silkscreen.
+**Note** the LED orientation is very important. One of the pads on each LED (the ground pin) will be misshapen relative to the others, this pad should connect to the PCB pad that is marked by the L shape on the silkscreen. For a sanity check, a corner of the LED's front-side will also be "cut", this corner must also line up with the L shape on the silkscreen.
 
-Blue is LEDs that will face away from you, towards the front-side of the PCB for the per-key lighting. Red will face "up" at you for the underglow:
+ Blue is LEDs that will be installed on the underside of the board, facing the front-side of the PCB for the per-key lighting. Red will be installed on the front of the board for the underglow:
 
 ![LED Orientation](./img/LED_orientation.svg)
 
-![LEDs Soldered](./img/LED.webp)
+Per Key leds soldered on the backside, while underglow LEDs ssoldered on the opposite side:
+![LEDs Soldered](./img/front_back_leds.png)
+
+Ground pin orientation:
+
+![LEDs Soldered](./img/led_groundpin.png)
 
 After you finish the next step of soldering the Pico to the PCB, recommend plugging the keyboard in and flashing QMK to ensure the LEDs are lighting up. If there are any issues, check the troubleshooting section.
 
@@ -171,7 +175,7 @@ Backside of PCB:
 
 Front-side of PCB:
 
-![Pico Soldered, PCB Frontside](./img/pico_frontside.webp)
+![Pico Soldered, PCB Frontside](./img/pico_frontside_truncated.png)
 
 #### Hot-swap Sockets
 
