@@ -5,13 +5,6 @@
 - Improving the case files and/or adding new cases see, [quirks](./README.md#quirks) and [case](./README.md#case)
 - Markdown files - fixing typos / grammar or improving clarity, documentation, etc.
 
-**Wish list:**
-
-- **Revision 2.0**
-  - Fixing the switch sockets / LED Holes to be right side up see [quirks](./README.md#quirks)
-  - Hardware-level handedness with an [unused pin](https://docs.qmk.fm/#/feature_split_keyboard?id=handedness-by-pin)
-  - Use holes instead of edge cuts for the LEDs to avoid the potential increased cost of the PCB
-
 If you have another idea, feel free to open an issue for discussion!
 
 ## Getting Started
