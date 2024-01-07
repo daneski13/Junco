@@ -11,7 +11,7 @@ Named after a small North American bird, Junco is a 60% Raspberry Pi Pico powere
 
 Want to contribute? Check out [Contributing](./CONTRIBUTING.md).
 
-Junco is inspired by the excellent [crkbd](https://github.com/foostan/crkbd), [Iris](https://keeb.io/collections/iris-split-ergonomic-keyboard/products/iris-keyboard-split-ergonomic-keyboard), [Kimiko](https://github.com/Keycapsss/Kimiko), [Sofle](https://github.com/josefadamcik/SofleKeyboard), and [Ferris](https://github.com/pierrechevalier83/ferris) keyboards.
+Junco is inspired by the excellent [crkbd](https://github.com/foostan/crkbd), [Iris](https://keeb.io/collections/iris-split-ergonomic-keyboard/products/iris-keyboard-split-ergonomic-keyboard), [Kimiko](https://github.com/Keycapsss/Kimiko), [Sofle](https://github.com/josefadamcik/SofleKeyboard), and [Ferris](https://github.com/pierrechevalier83/ferris) keyboards. Massive thanks to [@JellyTitan](https://github.com/JellyTitan) for the wiring overhaul.
 
 - [Design Philosophy and Quirks](#design-philosophy-and-quirks)
   - [Philosophy](#philosophy)
@@ -126,7 +126,8 @@ Solder the diodes as you see in the photo.
 SMD diodes are soldered on the back of the board. 
 Through-hole diodes are inserted on the back of the board, and soldered on the front.
 
-**Note** that the diodes have polarity, ensure the line on the diode matches the silkscreen.
+> [!WARNING]
+> **Note** that the diodes have polarity, ensure the line on the diode matches the silkscreen.
 
 ![Soldered Diodes](./img/diodes.webp)
 ![Soldered Diodes](./img/junco_through-hole_diodes.png)
@@ -140,7 +141,8 @@ First solder the level shifter. It's tiny & squirrley - [drag soldering](https:/
 
 All LEDs will be soldered facing _down into the board_. The LEDS for per-key RGB will be soldered on the back of the board, while the LED's for the underglow will be soldered on the front of the board.
 
-**Note** the LED orientation is very important. One of the pads on each LED (the ground pin) will be misshapen relative to the others, this pad should connect to the PCB pad that is marked by the L shape on the silkscreen. For a sanity check, a corner of the LED's front-side will also be "cut", this corner must also line up with the L shape on the silkscreen.
+> [!WARNING]
+> **Note** the LED orientation is very important. One of the pads on each LED (the ground pin) will be misshapen relative to the others, this pad should connect to the PCB pad that is marked by the L shape on the silkscreen. For a sanity check, a corner of the LED's front-side will also be "cut", this corner must also line up with the L shape on the silkscreen.
 
  Blue is LEDs that will be installed on the underside of the board, facing the front-side of the PCB for the per-key lighting. Red will be installed on the front of the board for the underglow:
 
